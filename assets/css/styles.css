@@ -1,0 +1,62 @@
+/* colors  */
+:root {
+  --light:#fff;
+  --dark: #191E28;
+  --yellow: #ffff00;
+}
+
+/* google font */
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: var(--light);
+  color: #6f2c2c;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin
+}
+
+header {
+  margin-bottom: 10%;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+
+#index {
+  display: flex;
+  justify-content: center;
+}
+
+#moon-btn,
+#sun-btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#moon-btn {
+  color: var(--dark);
+}
+
+#sun-btn {
+  color: var(--yellow);
+  display: none;
+  margin: 0;
+}
+
+.light {
+  background-color: var(--light);
+}
+
+.dark {
+  background-color: var(--dark);
+}

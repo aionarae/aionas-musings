@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aiona's Blog</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/blogs.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+</head>
+
+<body>
+  <section class="container">
+    <header>
+      <button id="moon-btn"> 
+        <span class="material-symbols-outlined">
+          dark_mode
+        </span>
+      </button>
+      <button id="sun-btn">
+        <span class="material-symbols-outlined">
+          light_mode
+        </span>
+      </button>
+      
+      <h1>Aiona's Adventures</h1>
+    </header>
+
+    <main id="index">
+      <section>
+        
+      </section>    
+
+      <section>
+        <h2>What's on your mind?</h2>
+        <form method="post" role="form">
+          <section class="form-group">
+            <input type="text" class="form-control" name="title" placeholder="Username"/>
+          </section>
+          <section class="form-group">
+            <input type="text" class="form-control" name="title" placeholder="Title"/>
+          </section>
+          <section class="form-group">
+            <textarea class="form-control bcontent" name="content" placeholder="Write your thoughts here."></textarea>
+          </section>
+          <section class="form-group">
+            <input type="submit" name="Submit" value="Submit" class="btn btn-primary form-control" />
+          </section>
+        </form>
+      </section>
+    </main>
+  </section>
+  <script src="./assets/js/logic.js"></script>
+  <script src="./assets/js/form.js"></script>
+  <script src="./assets/js/blog.js"></script>
+</body>
+</html>
