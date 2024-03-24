@@ -1,6 +1,6 @@
 /* colors  */
 :root {
-  --light:#fff;
+  --light: rgba(255,0,0,0);
   --dark: #191E28;
   --yellow: #ffff00;
 }

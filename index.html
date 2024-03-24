@@ -41,21 +41,23 @@
         <h2>What's on your mind?</h2>
         <form method="post" role="form">
           <section class="form-group">
-            <input type="text" class="form-control" name="title" placeholder="Username"/>
+            <input type="text" id="username-input" name="username" placeholder="Username" required/>
           </section>
           <section class="form-group">
-            <input type="text" class="form-control" name="title" placeholder="Title"/>
+            <input type="text" id="title-input" name="title" placeholder="Title" required/>
           </section>
           <section class="form-group">
-            <textarea class="form-control bcontent" name="content" placeholder="Write your thoughts here."></textarea>
+            <textarea id="content-input" name="content" placeholder="Write your thoughts here." required></textarea>
           </section>
+          <section id="required-message"></section>
           <section class="form-group">
-            <input type="submit" name="Submit" value="Submit" class="btn btn-primary form-control" />
+            <input type="submit" name="Submit" value="Submit" id="submit-button"/>
           </section>
         </form>
       </section>
     </main>
   </section>
+  <footer></footer>
   <script src="./assets/js/logic.js"></script>
   <script src="./assets/js/form.js"></script>
   <script src="./assets/js/blog.js"></script>
