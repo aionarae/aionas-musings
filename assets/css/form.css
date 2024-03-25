@@ -1,3 +1,16 @@
 .h1-blog {
   justify-content: flex-start;
 }
+
+form {
+  width: 75%;
+}
+
+
+input[type=text],
+textarea {
+  width: 125%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-family: "Rubik", sans-serif;;
+}

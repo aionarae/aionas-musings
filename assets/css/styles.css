@@ -1,62 +1,98 @@
 /* colors  */
 :root {
-  --light: rgba(255,0,0,0);
+  --light: #ffffff;
   --dark: #191E28;
   --yellow: #ffff00;
+  --dark-bg: url("/aionas-musings/assets/images/bg_dark.jpg");
+  --light-bg: url("/aionas-musings/assets/images/bg_light.jpg");
 }
 
-/* google font */
-.montserrat-font {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Rubik", sans-serif;
   background-color: var(--light);
-  color: #6f2c2c;
+  background-image: var(--dark-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f4f1f1;
   max-width: 100%;
   overflow-x: hidden;
-  margin
+  margin: 0;
+  min-height: 100vh;
 }
 
-header {
-  margin-bottom: 10%;
-}
-
-header h1 {
-  display: flex;
-  justify-content: center;
-}
-
-#index {
-  display: flex;
-  justify-content: center;
-}
-
-#moon-btn,
-#sun-btn {
+#moonButton,
+#sunButton {
   background-color: transparent;
   border: 0;
   cursor: pointer;
 }
 
-#moon-btn {
+#moonButton {
   color: var(--dark);
+  display: none;
 }
 
-#sun-btn {
+#sunButton {
   color: var(--yellow);
-  display: none;
   margin: 0;
 }
 
 .light {
   background-color: var(--light);
+  background-image: var(--light-bg);
+  color: var(--dark);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark {
   background-color: var(--dark);
+  background-image: var(--dark-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--light);
+}
+
+header {
+  margin-bottom: 2%;
+}
+
+.h1-main{
+  font-family: "Rammetto One", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+  text-decoration-color:#DD7361 ;
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+  position: relative;
+}
+
+.h2-main {
+  font-size: 3em;
+  font-style: normal;
+}
+
+#index {
+  display: flex;
+  justify-content: center;
+  border: #4b7d6d;
+  border-style:dashed;
+}
+
+footer {
+  border: #4b7d6d;
+  border-style:dashed;
+  position: relative;
+  bottom: 0%;
+  border-top: 20%;
+  border-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

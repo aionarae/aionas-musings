@@ -11,25 +11,25 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/blogs.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <section class="container">
     <header>
-      <button id="moon-btn"> 
+      <button id="moonButton"> 
         <span class="material-symbols-outlined">
           dark_mode
         </span>
       </button>
-      <button id="sun-btn">
+      <button id="sunButton">
         <span class="material-symbols-outlined">
           light_mode
         </span>
       </button>
       
-      <h1>Aiona's Adventures</h1>
+      <h1 class="h1-main">Aiona's Adventures</h1>
     </header>
 
     <main id="index">
@@ -38,7 +38,7 @@
       </section>    
 
       <section>
-        <h2>What's on your mind?</h2>
+        <h2 class="h2-main">What's on your mind?</h2>
         <form method="post" role="form">
           <section class="form-group">
             <input type="text" id="username-input" name="username" placeholder="Username" required/>
@@ -57,9 +57,12 @@
       </section>
     </main>
   </section>
-  <footer></footer>
-  <script src="./assets/js/logic.js"></script>
-  <script src="./assets/js/form.js"></script>
-  <script src="./assets/js/blog.js"></script>
+  <footer>
+    Made by Aiona
+  </footer>
+  <script type="module" src="./assets/js/logic.js"></script>
+  <script type="module" src="./assets/js/form.js"></script>
+  <!-- <script type="module" src="./assets/js/blog.js"></script> -->
 </body>
+
 </html>

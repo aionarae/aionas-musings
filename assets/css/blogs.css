@@ -1,5 +1,11 @@
-#back-btn{
+#backButton{
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  color: var(--light);
+}
+
+.h1-blog {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 3em;
 }
