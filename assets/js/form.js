@@ -1,4 +1,3 @@
-
 const submitButton = document.getElementById('submit-button');
 const requiredMessage = document.getElementById('required-message')
 
@@ -20,7 +19,9 @@ submitButton.addEventListener('click', function (event) {
     content: contentInput.trim(),
   };
 
-  localStorage.setItem('post', JSON.stringify(post));
+  let posts = JSON.parse(localStorage.getItem('posts')) || [];
+  posts.push(post)
+  localStorage.setItem('posts', JSON.stringify(posts));
 
   if (post.username === '' || post.title === '' || post.content === '') {
     showMessage('Username, Title, and Content are required.') 
@@ -29,7 +30,5 @@ submitButton.addEventListener('click', function (event) {
   };
 
   event.preventDefault();
-
-  // post.push(userData);
 
 });

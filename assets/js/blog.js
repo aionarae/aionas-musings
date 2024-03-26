@@ -1,42 +1,37 @@
-// when a user views the blog page, 
-// -- I see a list of blog posts 
-// -- i see the last post as a list
-// -- i can click back and add another post
-// if i submit, i see both posts
+// Retrieve and display all blog posts
 
 let blogPost = document.getElementById('postList');
 let backButton = document.getElementById('backButton');
-let lastPostData = localStorage.getItem('post');
+let lastPostData = localStorage.getItem('posts');
 
 if (lastPostData) {
   var lastPost = JSON.parse(lastPostData);
 
-  var listItem = document.createElement("li");
+  lastPost.forEach(function(post) {
 
-  var blogTitle = document.createElement("h2");
-  blogTitle.textContent = lastPost.title;
-  blogTitle.className = "blogTitle"
+      var listItem = document.createElement("li");
 
-  var content = document.createElement("p");
-  content.textContent = lastPost.content;
-  content.className = "content";
+      var blogTitle = document.createElement("h2");
+      blogTitle.textContent = post.title;
+      blogTitle.className = "blogTitle"
 
-  var author = document.createElement("p");
-  author.textContent = `Author: ${lastPost.username}`;
-  author.className = "author";
+      var content = document.createElement("p");
+      content.textContent = post.content;
+      content.className = "content";
 
+      var author = document.createElement("p");
+      author.textContent = `Author: ${post.username}`;
+      author.className = "author";
 
-  listItem.appendChild(blogTitle);
-  listItem.appendChild(content);
-  listItem.appendChild(author);
+      listItem.appendChild(blogTitle);
+      listItem.appendChild(content);
+      listItem.appendChild(author);
 
-//Append the new list to the ul
-blogPost.appendChild(listItem);
-
-
+    //Append the new list to the ul
+      blogPost.appendChild(listItem);
+  });
 }
 
 backButton.addEventListener("click", function() {
   window.location.href = "/Users/aiona/bootcamp/challenges/week-4/aionas-musings/index.html";
 });
-
